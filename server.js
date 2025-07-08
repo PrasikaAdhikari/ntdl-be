@@ -1,13 +1,14 @@
 import express from "express";
 import cors from "cors";
-import mongoose from "mongoose";
 import Task from "./models/tasks/taskModel.js";
+import mongodbConnection from "./config/mongoConfig.js";
 const app = express();
 
 // app.use(express.urlencoded({ extended: true }));
 //populate request body
 app.use(express.json());
-mongoose.connect("mongodb://localhost:27017/task-db");
+
+mongodbConnection();
 //allow cors
 app.use(cors());
 // let tasks = [
@@ -95,4 +96,4 @@ app.delete("/api/v1/tasks/:taskid", async (req, res) => {
     message: "Task Deleted",
   });
 });
-app.listen(4000);
+app.listen(4001);
