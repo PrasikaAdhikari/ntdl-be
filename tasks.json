@@ -1,0 +1,8 @@
+// [
+//   { "id": 1, "task": "task10000", "hour": 10, "type": "good" },
+//   { "id": 2, "task": "task2", "hour": 20, "type": "bad" },
+//   { "id": 3, "task": "task3", "hour": 30, "type": "good" },
+//   { "task": "NEWLY ADDED TASK", "hour": "600", "type": "bad", "id": "IFcua8" },
+//   { "task": "INITIAL TASK", "hour": 10, "type": "good", "id": "JEKGJu" },
+//   { "task": "INITIAL TASK", "hour": 10, "type": "good", "id": "ZUDvOP" }
+// ]

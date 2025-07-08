@@ -1,0 +1,41 @@
+hGET http://localhost:4000
+
+###
+GET http://localhost:4000/api/v1/tasks
+
+
+
+
+###
+POST http://localhost:4000/api/v1/tasks
+Content-Type: application/json
+
+{
+  "task": "Task5", "hour": 10, "type": "good"
+}
+
+# ###
+# POST http://localhost:3000/api/v1/tasks
+# Content-Type: application/json
+
+# {
+#    "id": 3, "task": "Task2", "hour": 30, "type": "bad" ,
+# }
+
+###
+PATCH http://localhost:4000/api/v1/tasks/686b410eeb5c9440f06df2ad
+Content-Type: application/json
+
+{
+   "type": "Bad"
+}
+
+
+###
+GET http://localhost:4000/api/v1/tasks/5
+
+###
+DELETE http://localhost:4000/api/v1/tasks/686b3e5335e3d890aac8d596
+
+
+  
